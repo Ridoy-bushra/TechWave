@@ -17,38 +17,48 @@
         .font-inter {
             font-family: "Inter", sans-serif;
         }
-
-        *font-inter {
-            font-family: "Inter", sans-serif;
-        }
     </style>
 </head>
 
-<body>
+<body class="font-inter">
+    <header>
     <nav
         class="bg-[#1A0B2E] flex justify-between max-w-[1600px] h-[92px] border-b border-[#412567] items-center px-[200px] " id="navbar">
-        <h1 class="text-3xl font-bold text-amber-50 font-inter">Tech<span
-                class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Wave</span></h1>
-        <ul class="flex text-[16px] justify-center text-amber-50 font-inter">
+        <h1 class="text-3xl font-bold text-amber-50">Tech
+            <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">Wave</span></h1>
+        <ul class="flex text-[16px] justify-center text-amber-50">
             <li class="p-2">About</li>
             <li class="p-2">Episodes</li>
             <li class="p-2">Host</li>
         </ul>
         <button
-            class="text-amber-50 text-[16px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[25px] font-inter">Subscribe<i
-                class="fa-solid fa-angle-right "></i></button>
+            class="text-amber-50 text-[16px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] cursor-pointer px-[16px] py-[12px] rounded-[25px]">Subscribe
+            <i class="fa-solid fa-angle-right"></i></button>
     </nav>
-    <nav id="navsmall"
-class="bg-[#1A0B2E] flex justify-between items-center 
-w-full h-[92px] border-b border-[#412567] px-4">
+    <nav id="short-nav"class="bg-[#1A0B2E] flex justify-between items-center 
+     w-full h-[92px] border-b border-[#412567] px-4">
 
-    <h1 class="text-3xl font-bold text-amber-50 font-inter">
-        Tech
-        <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-            Wave
+    <h1 class="text-3xl font-bold text-amber-50">Tech
+        <span class="bg-linear-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent"> Wave
         </span>
     </h1>
-
-    <img src="./assets/hamburger-menu.png" alt="" class="w-6 h-6">
-
+    <img src="assets/hamburger-menu.png" alt="three lines" class="w-6 h-6">
 </nav>
+        <div  class=" bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat grid justify-center items-center h-[760px] w-full">
+            <div id= "main-section" class="relative flex items-center justify-center h-[100%] w-[350px] mx-auto translate-y-[101px]">
+                <img src="assets/hero-circle.png" alt="" class="w-full h-full object-contain w-full">
+                <img src="assets/microphone.png" alt="" class="absolute w-[35%] ">
+                <span class="animate-pulse absolute top-0 right-10 text-[18px] flex justify-center items-center w-[75px] h-[38px] bg-[#00FF88] rounded-3xl font-semibold">NEW</span>
+            </div>
+            <div class="my-[130px] grid grid-cols-1 gap-y-6 justify-center items-center">
+                <h2 class="text-6xl font-extrabold text-amber-50 text-center">TechWave</h2>
+                <p class="text-amber-50 text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="flex gap-5 justify-center items-center">
+                    <button class=" w-50 h-10 px-[16] py-[12px] flex justify-center items-center gap-2 text-amber-50 text-[16px] bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[20px] cursor-pointer">
+                        <span><img src="assets/spotify.png" alt="" class="w-full"></span>Listen to Spotify</button>
+                    <button class="text-[16px] font-semibold border border-2 border-[#00FF88] flex  gap-2 justify-center items-center text-[#00FF88] w-35 h-10 rounded-[20px] px-[16px] py-[12px] cursor-pointer">
+                        <span><img src="assets/message.png" alt="" class="w-full"></span>Subscriber</button>
+                </div>
+            </div>
+        </div>
+    </header>
