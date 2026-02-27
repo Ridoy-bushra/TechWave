@@ -38,6 +38,29 @@ hr {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
   }
+  #characteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #ht{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  #buttons{
+    justify-content: center;
+  }
+  #ht>h4,p{
+    text-align: center;
+  }
+  #ak{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     #short-nav{
