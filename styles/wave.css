@@ -20,7 +20,6 @@ hr {
     width: 90%;
     margin: 0 auto;        /* center horizontally */
 }
-
     #chart {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -28,6 +27,17 @@ hr {
         justify-items: center;
         text-align: center;
     }
+    #chart-1 {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  #chart-1 > div {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     #short-nav{
