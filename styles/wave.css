@@ -61,11 +61,36 @@ hr {
   #ak{
     text-align: center;
   }
+  #last{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     #short-nav{
         display: none;
     }
+    #characteristics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #chart-1 {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  #chart-1 > div {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
 }
 
 
